@@ -59,3 +59,5 @@ console.log(students[2].address.option[1]);
 students[2].address.option.pop();
 console.log(students[2].address.option);
 
+delete students[2].address;
+console.log(students[2]);

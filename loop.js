@@ -68,6 +68,12 @@ for (const num of numbers) {
     console.log(num);
 }
 
+let techStack = ["JS", "TS", "node", "react", "psql"];
+
+for (const tech of techStack) {
+    console.log("Learning:", tech);
+}
+
 // for in loop
 const student = {
     name: "Shahinur",
@@ -82,4 +88,33 @@ const student = {
 for (const prop in student) {
     console.log(prop);
     console.log(student[prop]);
+}
+
+let obj = {
+    name: "Mr.X",
+    age: 100,
+    address: "Dhaka",
+};
+
+for (let ele in obj) {
+    console.log(ele, "->", obj[ele]);
+}
+
+// break
+let marks = 50;
+
+for (let i = marks; i <= 100; i++) {
+    // console.log(i);
+    if (i > 60) {
+        break;
+    }
+    console.log(i);
+}
+
+// continue
+for (let i = 0; i < 15; i++) {
+    if (i % 2 !== 0) {
+        continue;
+    };
+    console.log("Even:", i);
 }
